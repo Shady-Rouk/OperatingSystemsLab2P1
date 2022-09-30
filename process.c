@@ -8,7 +8,6 @@ void ParentProcess(void);
 
 int main() {
 	srandom(time(NULL));
-	int status;
 	pid_t pid;
 	pid = fork();
 	if (pid < 0) {
