@@ -7,7 +7,7 @@ void ChildProcess(void);
 void ParentProcess(void);
 
 int main() {
-	srandom(time(NULL));
+	srandom(getpid());
 	pid_t pid;
 	pid = fork();
 	if (pid < 0) {
